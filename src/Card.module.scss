@@ -1,0 +1,9 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/notification.sass";
+@import "bulma/sass/elements/icon.sass";
+@import "bulma/sass/grid/tiles.sass";
+@import "bulma/sass/components/card.sass";
+
+.card {
+	composes: card;
+}

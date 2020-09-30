@@ -4,7 +4,7 @@ import styles from './Card.module.scss';
 function Card() {
   return (
     <React.Fragment>
-      <div className="card">
+      <div className={styles.card}>
         <div className="card-image">
           <figure className="image is-4by3">
             <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />

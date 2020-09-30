@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import Card from './Card';
+import Body from './Body';
 import styles from './App.module.scss';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className={styles.App}>
       <header className={styles.AppHeader}>
       </header>
-      <Card />
+      <Body />
     </div>
   );
 }

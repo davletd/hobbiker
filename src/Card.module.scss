@@ -1,9 +1,29 @@
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/elements/notification.sass";
-@import "bulma/sass/elements/icon.sass";
+@import "bulma/sass/elements/image.sass";
 @import "bulma/sass/grid/tiles.sass";
 @import "bulma/sass/components/card.sass";
 
 .card {
 	composes: card;
+}
+
+.cardImage {
+	composes: card-image;
+}
+
+.tile {
+	composes: tile;
+}
+
+.is4 {
+	composes: is-4;	
+}
+
+.image {
+	composes: image;
+}
+
+.is4by3 {
+	composes: is-4by3;
 }

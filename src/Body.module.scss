@@ -1,0 +1,10 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/tiles.sass";
+
+.tile {
+	composes: tile;
+}
+
+.isAncestor {
+	composes: is-ancestor;
+}

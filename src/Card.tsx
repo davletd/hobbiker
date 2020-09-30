@@ -3,10 +3,10 @@ import styles from './Card.module.scss';
 
 function Card() {
   return (
-    <React.Fragment>
+    <div className={[styles.tile, styles.is4].join(' ')}>
       <div className={styles.card}>
-        <div className="card-image">
-          <figure className="image is-4by3">
+        <div className={styles.cardImage}>
+          <figure className={[styles.image, styles.is4by3].join(' ')}>
             <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
           </figure>
         </div>
@@ -31,7 +31,7 @@ function Card() {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

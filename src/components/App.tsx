@@ -8,7 +8,11 @@ function App() {
     <div className={styles.App}>
       <header className={styles.AppHeader}>
       </header>
-      <Body />
+      <Body 
+        error={null} 
+        items={[]} 
+        isLoaded={false} 
+      />
     </div>
   );
 }

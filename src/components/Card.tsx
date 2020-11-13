@@ -1,7 +1,12 @@
 import React from 'react';
+import { isTemplateExpression } from 'typescript';
 import styles from './Card.module.scss';
 
-function Card() {
+interface IProps {
+  name: any;
+}
+
+function Card(item: IProps) {
   return (
     <div className={[styles.tile, styles.is4].join(' ')}>
       <div className={styles.card}>
@@ -18,7 +23,7 @@ function Card() {
               </figure>
             </div>
             <div className="media-content">
-              <p className="title is-4">John Smith</p>
+              <p className="title is-4">{item.name}</p>
               <p className="subtitle is-6">@johnsmith</p>
             </div>
           </div>

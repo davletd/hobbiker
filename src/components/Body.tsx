@@ -45,21 +45,13 @@ const Body : FunctionComponent<IBodyState> = (bodyState: IBodyState) => {
     return <div>Loading...</div>;
   } else {
     return (
-      <ul>
+      <React.Fragment>
         {items.map(item => (
-          <li key={item.name}>
-            {item.name}
-          </li>
+          <Card {...item} />
         ))}
-      </ul>
+      </React.Fragment> 
     );
   }
-  // return (
-	// 	<div className={[styles.tile, styles.isAncestor].join(" ")}>
-	// 		<Card />
-	// 		<Card />
-	// 	</div>
-  // );
 }
 
 export default Body;

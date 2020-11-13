@@ -24,7 +24,6 @@ const Body : FunctionComponent<IBodyState> = (bodyState: IBodyState) => {
       .then(
         (result) => {
           setIsLoaded(true);
-          console.log('hello');
           if (result !== "") {
             setItems(result);
           }
@@ -45,11 +44,11 @@ const Body : FunctionComponent<IBodyState> = (bodyState: IBodyState) => {
     return <div>Loading...</div>;
   } else {
     return (
-      <React.Fragment>
+      <div className={[styles.tile, styles.is4].join(' ')}>
         {items.map(item => (
           <Card {...item} />
         ))}
-      </React.Fragment> 
+      </div>
     );
   }
 }

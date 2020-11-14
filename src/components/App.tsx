@@ -14,7 +14,7 @@ function App() {
   return (
     <div className={styles.App}>
       <header className={styles.AppHeader}>
-        <button className="button">Button</button>
+        <Link to="/create" className="button">Create</Link>
       </header>
          <Router>
             {/* A <Switch> looks through its children <Route>s and

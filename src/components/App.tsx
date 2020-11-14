@@ -7,6 +7,7 @@ function App() {
   return (
     <div className={styles.App}>
       <header className={styles.AppHeader}>
+        <button className="button">Button</button>
       </header>
       <Body 
         error={null} 

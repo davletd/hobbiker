@@ -1,5 +1,4 @@
 import React from 'react';
-import { isTemplateExpression } from 'typescript';
 import styles from './Card.module.scss';
 
 interface IProps {

@@ -12,27 +12,27 @@ import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className={styles.App}>
-      <header className={styles.AppHeader}>
-        <Link to="/create" className="button">Create</Link>
-      </header>
-         <Router>
-            {/* A <Switch> looks through its children <Route>s and
-                renders the first one that matches the current URL. */}
-          <Switch>
-            <Route path="/create">
-              <Create />
-            </Route>
-            <Route path="/">
-              <Body 
-                error={null} 
-                items={[]} 
-                isLoaded={false} 
-              />
-            </Route>
-          </Switch>
-        </Router>
-    </div>
+    <Router>
+      <div className={styles.App}>
+        <header className={styles.AppHeader}>
+          <Link to="/create" className="button">Create</Link>
+        </header>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/create">
+            <Create />
+          </Route>
+          <Route path="/">
+            <Body 
+              error={null} 
+              items={[]} 
+              isLoaded={false} 
+            />
+          </Route>
+        </Switch>  
+      </div>
+    </Router>
   );
 }
 

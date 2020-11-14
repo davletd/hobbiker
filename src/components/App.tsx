@@ -27,7 +27,7 @@ function App() {
             <Body 
               error={null} 
               items={[]} 
-              isLoaded={false} 
+              isLoaded={false}
             />
           </Route>
         </Switch>  
